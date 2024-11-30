@@ -7,6 +7,7 @@ const CounterApp = () => {
   const [count, setCount] = useState(1);
   const [enableNegativeCount, setEnableNegativeCount] = useState(false);
 
+  console.log(enableNegativeCount)
   const increment = () => {
     setValue(Number(value) + Number(count));
   };
@@ -15,6 +16,9 @@ const CounterApp = () => {
   };
 
   const NegativeCountCheck = () => {
+    if (enableNegativeCount) {
+      return value;
+    }
     if (value < 0) {
       setValue(0);
       return;

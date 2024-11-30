@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+.movieApp {
+  position: absolute;
+  width: 100dvw;
+  min-height: 100dvh;
+  padding: 0;
+  margin: 0;
+  background-color: #202533;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+.movieApp main {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.trending_movie {
+  display: flex;
+  justify-content: space-between;
+}
+.trending_movie p {
+  font-size: 20px;
+  font-weight: 300;
+  align-self: center;
+}
+.movieApp h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.movieApp img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.movieDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+.movieDetails button:hover {
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 720px) {
+  .movieApp main {
+    width: 90%;
+  }
+  .movieApp h2 {
+    font-size: 20px;
+  }
+  .trending_movie p {
+    font-size: 16px;
+  }
+  .movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+  }
+
+  .movieApp button {
+    display: none;
+  }
+}

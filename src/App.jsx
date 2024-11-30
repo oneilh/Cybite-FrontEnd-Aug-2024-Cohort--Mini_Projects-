@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./App/Home";
 import CounterApp from "./App/Counter/pages/CounterApp";
-
+import MovieApp from "./App/Movies card/MovieApp";
 
 // error page
 import ErrorPage from "./App/Counter/components/ErrorPage";
@@ -16,7 +16,11 @@ const router = createBrowserRouter([
   },
   {
     path: "counter",
-    element: <CounterApp />
+    element: <CounterApp />,
+  },
+  {
+    path: "movielist",
+    element: <MovieApp />,
   },
 
   {

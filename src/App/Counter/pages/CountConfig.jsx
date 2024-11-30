@@ -21,7 +21,7 @@ const CountConfig = ({ setValue, setCount, setEnableNegativeCount }) => {
     e.preventDefault();
     setCount(actionValue);
     setValue(startValue);
-    setEnableNegativeValue(isChecked);
+    setEnableNegativeCount(isChecked);
   };
 
   const handleReset = () => {
