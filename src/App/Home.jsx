@@ -13,6 +13,11 @@ const Home = () => {
           Movie List App
         </button>
       </Link>
+      <Link to="form">
+        <button className="btn btn-md lg:btn-lg bg-green-500 text-white px-4 text-center">
+          Form
+        </button>
+      </Link>
     </div>
   );
 };
