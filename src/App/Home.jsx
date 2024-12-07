@@ -18,12 +18,8 @@ const Home = () => {
           Form
         </button>
       </Link>
-      <Link to="form">
-        <button className="btn btn-md lg:btn-lg bg-green-500 text-white px-4 text-center">
-          Form
-        </button>
-      </Link>
-      <a href="https://mini-projects-lime.vercel.app/">
+      
+      <a href="https://rock-paper-scissors-psi-ten.vercel.app/">
         <button className="btn btn-md lg:btn-lg bg-orange-400 text-white px-4 text-center">
           RocknPapernScissors
         </button>
